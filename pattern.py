@@ -3,6 +3,8 @@ t = turtle.Turtle()
 
 s = turtle.Screen()
 s.bgcolor("black")
+t.pencolor("white")
+t.speed(0)
 c = 0
 d = 0
 while 1:
@@ -16,4 +18,7 @@ while 1:
         c = 0
         d += 1
         if d >= 12:
-            continue
+            break
+
+t.hideturtle()
+turtle.done()
